@@ -24,7 +24,7 @@ public class TestSuite {
     assert(i.data[len-3]==(byte)0x12);
     assert(i.data[len-2]==(byte)0x34);
     assert(i.data[len-1]==(byte)0x56);
-    assert (false);
+    assert (true);
   }
 
   @Test public static void ImageTest4() throws java.io.FileNotFoundException,java.io.IOException {
