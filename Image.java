@@ -30,8 +30,8 @@ public class Image{
 		String string="0x"+ Integer.toHexString(valRgb);
 		pos=x*width*3+y*3;
 		data[pos]=(byte)Integer.parseUnsignedInt(string.substring(2, 4),16); 
-		data[pos+1]=(byte)Integer.parseUnsignedInt(string.substring(2, 4),16);
-		data[pos+2]=(byte)Integer.parseUnsignedInt(string.substring(2, 4),16);
+		data[pos+1]=(byte)Integer.parseUnsignedInt(string.substring(4, 6),16);
+		data[pos+2]=(byte)Integer.parseUnsignedInt(string.substring(6, 8),16);
 	}
 	
 	public void write(String filename) throws IOException {	 
